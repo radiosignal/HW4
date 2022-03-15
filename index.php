@@ -1,11 +1,19 @@
+
+
+
 <?php
 
-$dirImages = 'img/';
-$images = scandir($dirImages);
-for ($i = 0; $i < count($images); $i++) {
-    if ($images[$i] != '.' && $images[$i] != '..') {
-        echo '<a href="' . $dirImages . $images[$i] . '" target="_blank"><img src=' . $dirImages . $images[$i] . ' style="width: 50px;"></a>';
-    }
-}
 
+
+
+
+//switching myWay phps
+include_once(dirname(__FILE__) . '/HW4/myWay/index.php');
+include_once(dirname(__FILE__) . '/HW4/myWay/upload/index.php');
+
+//switching teachersWay phps
 //
+//include_once (dirname(__FILE__).'HW4/teachersWay/index.php');
+//include 'HW4/teachersWay/index.php';
+
+
